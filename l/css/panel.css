@@ -1,0 +1,76 @@
+/*Panel css*/
+/*Dentro de este archivo se manejan las variables necesesarias para implementar las librerias de las plantillas y accesorios WEB*/
+
+/*Área de llamado de las plantillas y accesorios*/
+/*@import url('www.librerias.com/libreria1.css');*/
+@import url('./categorias/cargas/p_carga.css');
+@import url('./categorias/pie_pagina/marc_agua.css');
+@import url('./categorias/textos/t_princ.css');
+@import url('./categorias/imgs/logo_inic.css');
+@import url('./categorias/cards/perfil_01.css');
+@import url('./categorias/social/qrs_block.css');
+
+@import url('./externo/css/main.css');/*Externo*/
+
+/*Fin de llamado*/
+
+/*Área de declaración de variables*/
+:root {
+	/*Declaración de paleta de colores*/
+		--color1: #FFC107;
+		--color2: #D32F2F;
+		--color3: #212121;
+		--color4: #FF5722;
+		--color5: #388E3C;
+		--color6: #795548;
+		--color7: #E91E63;
+	/*Fin de paleta*/
+
+	/*Imagen de pantalla de carga y portada*/
+		--v_p_inic: url('../../imgs/PORT_00.jpg');
+
+	/*Color de barra de progreso*/
+		--c_sup_bar: #FFC107;
+		--c_inf_bar: #D32F2F;
+
+	/*Color de titulo de bara de carga*/
+		--t_c_princ: #FFC107;
+
+	/*Color de marca de agua*/
+		--c_m_agua: #D32F2F;
+
+	/*Imagén principal de portada*/
+		--img_port: url('../../imgs/PORT_00.jpg');
+
+}
+/*Fin de la declaración*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+/*Marca de agua*/
+.marca-agua {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  padding: 6px;
+  margin-right: 10px;
+  background-color: #e79e85;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 0.7;
+}
+.marca-agua a {
+  color: #fff;
+  text-decoration: none;
+}
+.marca-agua a span {
+  line-height: 10px;
+}
+/*Fin de marca*/
